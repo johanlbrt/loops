@@ -1,6 +1,5 @@
 fn main() { 
-    for tick in (1..6).rev() {
-        println!("{tick}");
-    }
-    println!("BOOM");
+    let s1 = String::from("hello");
+    let s2 = s1.clone(); // proper cloning without stack clearing
+    println!("{s1}{s2}");
 }
