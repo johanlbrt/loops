@@ -1,15 +1,11 @@
-fn main() { //? Number devision by 2023?
-    let mut number:u128 = 0;
-    let mut counter:u8 = 0;
-    
-    // * There is no efficient overshoot
-    loop {
-        number+=1;
-        if number % 2023 == 0 {
-            println!("{number}");
-            counter+=1;
-            if counter == 10 {break};
-        }
+fn main() {
+    let array: [u8; 5] = [10, 20, 30, 40, 50];
+    let mut index = 0;
 
+    while index < array.len() {
+        println!("Array index {index} = {}", array[index]);
+        index += 1;
+        
     }
+
 }
