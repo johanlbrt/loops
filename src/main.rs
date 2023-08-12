@@ -1,7 +1,6 @@
 fn main() { 
-    let array: [u8; 5] = [10, 20, 30, 40, 50];
-    for elements in array { //* Optimized check
-        println!("{elements}")
+    for tick in (1..6).rev() {
+        println!("{tick}");
     }
-
+    println!("BOOM")
 }
